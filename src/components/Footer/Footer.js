@@ -1,4 +1,5 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, Sociallogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterElements';
@@ -7,6 +8,10 @@ import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, 
 
 
 const Footer = () => {
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
     return (
         <FooterContainer>
             <FooterWrap>
@@ -47,11 +52,12 @@ const Footer = () => {
                 </FooterLinksContainer>
                 <SocialMedia>
                     <SocialMediaWrap>
-                        <Sociallogo to='/'>
-                            dolla
+                        <Sociallogo to='/' onClick={toggleHome}>
+                            diu Cash
                         </Sociallogo>
-                        <WebsiteRights>dolla ©2022 &copy; {new Date().getFullYear()}
-                            All rights reserved. </WebsiteRights>
+                        <WebsiteRights>
+                            Copyright &copy; {new Date().getFullYear()} DIU Tanjil
+                        </WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href="/" target="_blank" aria-Lebel="Facebook">
                                 <FaFacebook />

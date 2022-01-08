@@ -25,7 +25,7 @@ const HeroSection = () => {
     }
     return (
         <>
-            <HeroContainer>
+            <HeroContainer id='home'>
                 <HeroBg>
                     <VideoBg autoPlay loop muted src={Video} type='video/mp4'
                     />
@@ -39,10 +39,16 @@ const HeroSection = () => {
                         Sign up for a new account today and received $250 in credit towards your next payment.
                     </HeroP>
                     <HeroBtnWrapper>
-                        <Button to='signup' onMouseEnter={onHover}
+                        <Button to='signup'
+                            onMouseEnter={onHover}
                             onMouseLeave={onHover}
                             primary='true'
                             dark='true'
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}
                         >
                             Get Started {hover ? <ArrowForward /> : <FaArrowRight />}
                         </Button>

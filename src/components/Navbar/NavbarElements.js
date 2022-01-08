@@ -5,7 +5,7 @@ import { Link as LinkS } from 'react-scroll'
 
 
 export const Nav = styled.nav`
-    background: #000;
+    background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -63,7 +63,7 @@ display: flex;
 align-items: center;
 list-style: none;
 text-align: center;
-margin-right: -22px;
+margin-right: 50px;
 
 @media screen and (max-width: 760px){
     display: none;
@@ -110,6 +110,7 @@ border: none;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
 text-decoration: none;
+margin-right: 20px;
 
 &:hover{
     transition: all 0.2s ease-in-out;
