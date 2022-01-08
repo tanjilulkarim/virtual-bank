@@ -6,7 +6,7 @@ const SignInComponents = () => {
         <>
             <Container>
                 <FormWrap>
-                    <Icon>diu Cash</Icon>
+                    <Icon to='/'>diu Cash</Icon>
 
                     <FormContent>
                         <Form action='#'>
