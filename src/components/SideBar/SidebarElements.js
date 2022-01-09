@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link as LinkS } from 'react-scroll'
-import { Link as LinkR } from 'react-scroll'
+import { Link as LinkR } from 'react-router-dom'
 
 import { FaTimes } from 'react-icons/fa'
 
@@ -63,7 +63,7 @@ export const SideBarLink = styled(LinkS)`
 
     &:hover{
          color: #01bf71;
-        transition: all 0.2s ease-in-out;
+        transition: all  0.2s ease-in-out;
        
     }
 `

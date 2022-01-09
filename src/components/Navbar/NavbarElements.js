@@ -84,7 +84,9 @@ padding: 0 1rem;
 cursor: pointer;
 
 &.active{
-    border-bottom: 3px solid #01bf17;
+    border-bottom: 3px solid green;
+    padding-bottom: 10px;
+    
 }
 `;
 
