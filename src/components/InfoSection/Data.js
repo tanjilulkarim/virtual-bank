@@ -10,7 +10,7 @@ export const homeObjOne = {
     imgStart: false,
     img: require('../../images/svg-1-removebg-preview.png'),
     alt: 'Money',
-    dark: true,
+    dark: false,
     primary: true,
     darkText: false,
 };
